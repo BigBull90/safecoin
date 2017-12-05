@@ -1,0 +1,98 @@
+<!doctype html>
+<style type="text/css">
+*{
+	text-align: center;
+}
+body{
+	font-size: 16px;
+}
+#mainPopup {
+	padding: 10px;
+	height: 200px;
+	width: 700px;
+	margin: 0 auto;
+	font-family: Helvetica, Ubuntu, Arial, sans-serif;
+}
+h1 {
+	font-size: 2em;
+}
+input{
+	font-size: 38px;
+	padding: 4px;
+}
+
+body.sc{
+	margin-top: 40px !important;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+button{
+	margin-top: 10px;
+	font-size: 16px;
+	padding:10px 40px;
+}
+
+
+#safecoin{
+	font-family: verdana, Helvetica, Arial, Sans-Serif;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	background-color: #4CAF50;
+	color: #FFF;
+	z-index: 9999;
+	text-align: center;
+}
+#safecoin .sc-text{
+	position: relative;
+	margin-top: 8px;
+}
+#safecoin span{
+	font-size: 20px;
+}
+
+#safecoin .donate{
+	position: absolute;
+	bottom: 6px;
+	right: 20px;
+	font-size: 18px;
+}
+
+.donation{
+	width: 400px;
+	text-align: center;
+	margin: 30px auto;
+}
+
+</style>
+<body class="sc">
+	<div id="safecoin"><div class="sc-text"><span>This domain is trusted by the community. SafeWord: '<span class="safeword-bnr"></span>'</span><div class="donate"><a href="https://monxas.com/safecoin/donate.php">Donate</a></div></div></div>
+
+	<div id="mainPopup">
+		<h1>Safecoin</h1>
+		<h2>Get an extra layer of security, and stay safe from phising sites</h2>
+		<p>We keep a list of safe domains as well as a list of known phising sites, and display banners and popos everytime the extension recognizes a domain.</p>
+
+		<p>Don't forget to help by sending more websites, either to report them or to flag them as safe, by hitting the extension icon on the upper rigt corner of your browser</p>
+
+		<h2>Configuration:</h2>
+		<h3>You're just one step short of using this extension to it's maximum:</h3>
+		<p>Phising sites can fake the banner we display, so we decided to add a safe word. This safeword will appear on the banner. If no safeword is displayed, chances are the site is not legit.</p>
+		<h3>You can set your own safeword or safewords right now:</h3>
+		<input type="text" class="safeword-input">
+		<div>
+			<button>Save Safeword</button>
+		</div>
+
+		<div class="donation">
+			Please consider donating to help mantain the project: 3Egx852qcZZ48MeH1PxbdtyznXhj2rXv3X
+		</div>
+	</div>
+	<script src="jquery.min.js"></script>
+	<script src="page_action.js"></script>
+</body>

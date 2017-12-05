@@ -1,0 +1,105 @@
+body.sc{
+	margin-top: 40px !important;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+#safecoin{
+	font-family: verdana, Helvetica, Arial, Sans-Serif;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	background-color: #4CAF50;
+	color: #FFF;
+	z-index: 9999;
+	text-align: center;
+}
+#safecoin .sc-text{
+	position: relative;
+	margin-top: 8px;
+}
+#safecoin span{
+	font-size: 20px;
+}
+
+#safecoin .donate{
+	position: absolute;
+	bottom: 6px;
+	right: 20px;
+	font-size: 18px;
+}
+
+#safecoin a, #safecoin-popup a{
+	text-decoration: none;
+	color: #FFF;
+}
+ #safecoin-popup a{
+ 	display: block;
+ 	padding: 4px 6px;
+ }
+
+#safecoin-popup{
+	font-family: verdana, Helvetica, Arial, Sans-Serif;
+	position: fixed; /* Stay in place */
+	z-index: 9990; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+#safecoin-popup .sc-popup-box{
+	background-color:  #ff4444;
+	margin: 10% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+	max-width: 800px; /* Could be more or less, depending on screen size */
+	height: 400px;
+}
+#safecoin-popup .sc-popup-content{
+	position: relative;
+	height: 100%;
+}
+#safecoin-popup .sc-close{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	font-size: 20px;
+	font-weight: bold;
+}
+#safecoin-popup .sc-donate{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	left:0;
+	right:0;
+	bottom: 0;
+}
+#safecoin-popup h1{
+	color: #FFF;
+	font-size: 24px;
+	margin-bottom: 2em !important;
+}
+#safecoin-popup p{
+	color: #FFF;
+	font-size: 16px;
+}
+
+#safecoin-popup .icon{
+	float: left;
+	width: 142px;
+}
+#safecoin-popup .text{
+	float: left;
+	width: calc(96% - 142px);
+
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+	<style>
+		button{
+			margin-top: 4px;
+		}
+		a{
+			text-decoration: none;
+			color: #333;
+			font-size: 14px;
+		}
+	</style>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<label for="safeword">Safe word:</label>
+	<input id="safeword" name="safeword" type="text" maxlength="255" value="">
+	<button  class="save-safeword">Save</button>
+	<hr>
+	<div class="link"><a class="send-domain" data-action="report" href="#">Report this domain</a></div>
+	<hr>
+	<div class="link"><a class="send-domain" data-action="safe" href="#">Claim domain as safe</a></div>
+
+  <script src="../js/jquery/jquery.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
